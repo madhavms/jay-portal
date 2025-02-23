@@ -4,7 +4,7 @@ const App = () => {
       <div className="max-w-4xl bg-white shadow-2xl rounded-3xl p-8 text-center transform transition hover:scale-105">
         <img
           src="https://raw.githubusercontent.com/madhavms/jay-portal/refs/heads/main/src/assets/jku.jpeg"
-          alt="Jayakhosh Chidambaran"
+          alt="Jayakhosh Chidambaran (Jay)"
           className="w-40 h-40 mx-auto rounded-full border-4 border-blue-600 shadow-md"
         />
         <h1 className="text-4xl font-extrabold mt-6 text-gray-900">
