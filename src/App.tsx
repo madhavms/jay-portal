@@ -31,7 +31,7 @@ const App = () => {
 
         <div className="mt-6">
           <h2 className="text-2xl font-semibold text-gray-800">Contact</h2>
-          <p className="text-gray-700 text-lg">Email:</p>
+          <p className="text-gray-700 text-lg">Email: test</p>
           <div className="flex justify-center gap-6 mt-4">
             <a
               href="https://www.linkedin.com/in/jayakhosh-chidambaran-00943175/"
