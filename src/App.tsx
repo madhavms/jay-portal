@@ -7,15 +7,26 @@ const App = () => {
           alt="Jayakhosh Chidambaran"
           className="w-40 h-40 mx-auto rounded-full border-4 border-blue-600 shadow-md"
         />
-        <h1 className="text-4xl font-extrabold mt-6 text-gray-900">Jayakhosh Chidambaran</h1>
-        <p className="text-gray-700 text-lg mt-3">An accomplished professional with over 20 years of experience</p>
-        <p className="text-gray-600 mt-2 text-md leading-relaxed">
-          Expertise in General Management, Product Development, Channel Development, Sales & Marketing, and Consulting.
+        <h1 className="text-4xl font-extrabold mt-6 text-gray-900">
+          Jayakhosh Chidambaran
+        </h1>
+        <p className="text-gray-700 text-lg mt-3">
+          An accomplished professional with over 20 years of experience
         </p>
-        
+        <p className="text-gray-600 mt-2 text-md leading-relaxed">
+          Expertise in General Management, Product Development, Channel
+          Development, Sales & Marketing, and Consulting.
+        </p>
+
         <div className="mt-6">
-          <h2 className="text-2xl font-semibold text-gray-800">Areas of Expertise</h2>
-          <p className="text-gray-700 mt-3 text-lg">Strategic Planning, Business Development, Negotiation, Consulting, Strategic Account Management, Price Management, Solution Selling, Sales Cycle Management, Process Improvement</p>
+          <h2 className="text-2xl font-semibold text-gray-800">
+            Areas of Expertise
+          </h2>
+          <p className="text-gray-700 mt-3 text-lg">
+            Strategic Planning, Business Development, Negotiation, Consulting,
+            Strategic Account Management, Price Management, Solution Selling,
+            Sales Cycle Management, Process Improvement
+          </p>
         </div>
 
         <div className="mt-6">
