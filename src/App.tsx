@@ -1,4 +1,4 @@
-const Portfolio = () => {
+const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 p-8 flex flex-col items-center">
       <div className="max-w-4xl bg-white shadow-2xl rounded-3xl p-8 text-center transform transition hover:scale-105">
@@ -45,4 +45,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default App;
