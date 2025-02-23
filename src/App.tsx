@@ -8,7 +8,7 @@ const App = () => {
           className="w-40 h-40 mx-auto rounded-full border-4 border-blue-600 shadow-md"
         />
         <h1 className="text-4xl font-extrabold mt-6 text-gray-900">
-          Jayakhosh Chidambaran (Jay)
+          Jayakhosh Chidambaran 
         </h1>
         <p className="text-gray-700 text-lg mt-3">
           An accomplished professional with over 20 years of experience
