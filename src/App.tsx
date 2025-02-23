@@ -1,5 +1,3 @@
-import React from "react";
-
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 p-8 flex flex-col items-center">

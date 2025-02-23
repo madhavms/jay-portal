@@ -1,4 +1,4 @@
-name: Build and Deploy Work Permit Portal
+name: Build and Deploy Jay Portal
 
 on:
   push:
