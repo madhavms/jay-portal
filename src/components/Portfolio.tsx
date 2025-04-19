@@ -2,12 +2,23 @@ import { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import articles from '../assets/jay_articles.json';
 
-const categories = Object.keys(articles);
+// Define the type for an article
+type Article = {
+  title: string;
+  excerpt: string;
+};
+
+// Define the type for the articles object
+type ArticlesByCategory = {
+  [category: string]: Article[];
+};
+
+const categories = Object.keys(articles as ArticlesByCategory);
 
 export default function Portfolio() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState<string>("");
 
-  const filterBySearch = (items) =>
+  const filterBySearch = (items: Article[]): Article[] =>
     items.filter((article) =>
       article.title.toLowerCase().includes(search.toLowerCase())
     );
@@ -43,13 +54,13 @@ export default function Portfolio() {
       />
 
       {categories.map((category) => {
-        const filtered = filterBySearch(articles[category]);
+        const filtered = filterBySearch((articles as ArticlesByCategory)[category]);
         if (filtered.length === 0) return null;
         return (
           <div key={category} style={{ marginBottom: "2.5rem" }}>
             <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "1rem" }}>{category}</h2>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
-              {filtered.map((article, index) => (
+              {filtered.map((article: Article, index: number) => (
                 <div key={index} style={{ border: "1px solid #ccc", padding: "1rem", borderRadius: "8px" }}>
                   <h3 style={{ fontSize: "1.125rem", fontWeight: "bold" }}>{article.title}</h3>
                   <p style={{ fontSize: "0.95rem", color: "#555" }}>{article.excerpt}</p>
@@ -60,7 +71,7 @@ export default function Portfolio() {
         );
       })}
 
-      {categories.every((cat) => filterBySearch(articles[cat]).length === 0) && (
+      {categories.every((cat) => filterBySearch((articles as ArticlesByCategory)[cat]).length === 0) && (
         <p style={{ color: "#888" }}>No articles found.</p>
       )}
 
